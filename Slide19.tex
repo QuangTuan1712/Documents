@@ -1,0 +1,31 @@
+\begin{frame}{\makebox[0pt][l]{\includegraphics[scale=0.3]{Logotip.png}}\hspace{4.5cm}\textbf{\textcolor{blue}{П}\textcolor{gray}{ример использования меры Шеннона}}}
+    \fontsize{9pt}{11pt}\selectfont
+    \setlength{\parindent}{3ex}
+    \noindentШулер наугад вытаскивает одну карту из стопки, содержащей 9 известных ему карт: 3 джокера, 3 туза, 1 король, 1 дама и 1 валет. Какое количество информации для шулера содержится в этом событии s?
+    
+    \medskip
+    \qquadВероятность вытащить \quad$\left\{\begin{array}{l}
+        \text{джокера} \\
+        \text{туза} \\
+        \text{короля} \\
+        \text{даму} \\
+        \text{валета} \\
+        \text{ } \\
+        \text{ }
+    \end{array}\right\}$ \quadравна \quad$\left\{\begin{array}{l}
+        3/9 = 1/3 \\
+        3/9 = 1/3 \\
+        1/9 \\
+        1/9 \\
+        1/9 \\
+        \text{ }
+    \end{array}\right.$
+    
+    \smallskip
+    \noindentКоличество информации, выраженное в тритах, равно:\\
+    \begin{align*}
+        i(s) = -(\frac{1}{3}\cdot\log_3 \frac{1}{3} + \frac{1}{3}\cdot\log_3 \frac{1}{3} + \frac{1}{9}\cdot\log_3 \frac{1}{9} + \frac{1}{9}\cdot\log_3 \frac{1}{9} + \frac{1}{9}\cdot\log_3 \frac{1}{9}) =\hspace{2cm}\\
+        = \frac{1}{3} + \frac{1}{3} + \frac{2}{9} + \frac{2}{9} + \frac{2}{9} = 1  \frac{1}{3} \approx \log_3 5 \hspace{1mm}vs \hspace{1mm}\log_3 14\hspace{4.2cm}
+    \end{align*}
+    
+\end{frame}
