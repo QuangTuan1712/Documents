@@ -29,7 +29,7 @@ public class Showcase extends Inhuman{
         if (!(o instanceof Showcase)) return false;
         Showcase show = (Showcase) o;
         return Objects.equals(this.getName(), show.getName()) &&
-                Objects.equals(this.getLocation(), show.location)&&
+                Objects.equals(this.location, show.location)&&
                 Objects.equals(this.getInscription(), show.getInscription());
 	}
 	@Override
