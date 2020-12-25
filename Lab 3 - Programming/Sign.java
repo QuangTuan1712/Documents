@@ -20,10 +20,10 @@ public class Sign extends Inhuman{
 	@Override
 	public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Showcase)) return false;
+        if (!(o instanceof Sign)) return false;
         Sign sign = (Sign) o;
         return Objects.equals(this.getName(), sign.getName()) &&
-                Objects.equals(this.getLocation(), sign.location)&&
+                Objects.equals(this.location, sign.location)&&
                 Objects.equals(this.getInscription(), sign.getInscription());
 	}
 	@Override
